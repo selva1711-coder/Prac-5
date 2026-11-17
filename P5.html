@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task Sphere - Navigation Bar</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f2f6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #222222;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 20px;
+    margin-right: auto;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 25px 20px;
+    font-size: 18px;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    color: white;
+    padding: 25px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111111;
+    min-width: 180px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 18px 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a:hover,
+.dropbtn:hover {
+    background-color: #333333;
+}
+
+.login {
+    background-color: #087df5;
+    margin: 10px;
+    padding: 15px 25px !important;
+}
+
+.signup {
+    border: 2px solid #087df5;
+    margin: 10px;
+    padding: 13px 20px !important;
+}
+
+.signup:hover {
+    background-color: #087df5;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="logo">Task Sphere</div>
+
+    <a href="#">Home</a>
+
+    <div class="dropdown">
+
+        <div class="dropbtn">
+            Tasks &#9662;
+        </div>
+
+        <div class="dropdown-content">
+            <a href="#">Daily Tasks</a>
+            <a href="#">My Goals</a>
+            <a href="#">Completed Tasks</a>
+        </div>
+
+    </div>
+
+    <a href="#">Contact</a>
+
+    <a href="#" class="login">Log In</a>
+
+    <a href="#" class="signup">Sign Up</a>
+
+</div>
+
+</body>
+</html>
